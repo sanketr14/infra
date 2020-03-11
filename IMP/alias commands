@@ -1,0 +1,20 @@
+1)For creating alias for any server=
+
+vim .bashrc
+{
+alias edev='ssh -v eadmin@34.194.13.248'
+#passwd=eadmin
+alias pdev='ssh -v padmin@107.23.28.65'
+#passwd=padmin
+alias eqa='ssh -X qauser@34.197.10.18'
+#passwd=qauser
+}
+
+##### (alias alias name='ssh -v username@server ip') #####
+
+2)copy alias = alias cpedev ='rsync -axSRzv eadmin@34.194.13.248:/home/eadmin/temp .'
+
+3)copy nginx error logs from server to desktop= cp *error.log /home/eadmin/temp
+nginx logs= cd /var/log/nginx/
+to give permission to copy to desktop = chown -R eadmin.eadmin /home/eadmin
+

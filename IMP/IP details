@@ -1,0 +1,18 @@
+EPCH ==> Old Epicchannel server (ubuntu) =  172.31.28.172
+EPDEV ==>  Epic/Docubay Dev Server =        172.31.14.61
+EPPAPI ==> prod Api server EPIC (prod) =    172.31.7.119
+EPPAPI2b ==> --  -- (prod) =                172.31.4.23
+EPPAPI3a => --  -- (prod) =                 172.31.26.0
+EPPCache  ==> Memcache and Redis (prod) =   172.31.9.52
+EPPCMS    ==> Epic CMS server (prod) =      172.31.1.247
+EPPMongo  ==> Epic Mongo Server (prod) =    172.31.8.10
+EPPWEB    ==> Epic Web Server (prod) =      172.31.3.193
+EPSTG ==> Epic Staging Server (prod) =      172.31.22.175
+DBAPI => Docubay API server  (prod) =       172.31.29.27
+DBCMS  ==> Docubay CMS Server (prod) =      172.31.28.98
+DBWEB ==> Docubay Web server (prod) =       172.31.23.148
+SKCMS  ==> Shubhkart CMS  =  
+SKDEV    ==> Shubhkart Development = 
+SKREDIS  ==> Shukbhkart Redis = 
+SKWEB  ==> Shubhkart Web = 
+

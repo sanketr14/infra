@@ -1,0 +1,12 @@
+Docubay(premium ott=its fully chargeble)
+netflix(medium ott= its not fully chargeble)
+Dev =N verginia (its an cheapest)
+Prod =Mum (its use because of low latency)
+
+
+
+
+ssh -v eadmin@34.194.13.248   passwd=eadmin
+ssh -v padmin@107.23.28.65    passwd=padmin
+ssh -X qauser@34.197.10.18    passwd=qauser
+
