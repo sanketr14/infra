@@ -1,2 +1,32 @@
 DBBACKUP ACCESS KEY ID:- AKIAQ5OFAS6CZ5WVYG7Y 
 DBBACKUP SECRET ACCESS KEY:- 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
+
+________________________________________________________________________________________________________________________________________________
+source /var/tmp/aws/bin/activate
+
+cd /var/tmp/mongo_backup
+
+find -maxdepth 1 -type d -mtime -1|grep epic|cut -d '/' -f 2
+
+cd /var/tmp/mongo_backup && tar -czf epic_prod_daily-`date '+%H'`-hrs.tgz 
+
+tar -ztvf  epic_prod_daily-12-hrs.tgz (for listing)
+
+aws s3 cp epic_prod_hourly-06-hrs s3://epic-mongo-backup/mongoprod --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers --recursive
+
+_________________________________________________________________________________________________________________________________________________
+
+#!/bin/bash
+set -x
+cd /var/tmp/mongo_backup/s3data && rm -rf *
+#cd /var/tmp/mongo_backup
+filelist=`cd /var/tmp/mongo_backup && find -maxdepth 1 -type d -mtime -1|grep epic|cut -d '/' -f 2`
+echo $filelist
+cd /var/tmp/mongo_backup && tar -cvzf epic_prod_daily-`date '+%D'|sed s/'\/'/-/g`.tgz $filelist && chmod 777 *.tgz && mv -f *.tgz s3data/
+source /var/tmp/aws/bin/activate
+cd /var/tmp/mongo_backup s3/* && aws s3 cp s3data s3://epic-mongo-backup/mongoprod --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers --recursive
+deactivate
+#cd /var/tmp/mongo_backup/s3data && rm -rf *
+cd /var/tmp/mongo_backup && rm -rf epic_prod_hourly-*
+
+________________________________________________________________________________________________________________________________________________
