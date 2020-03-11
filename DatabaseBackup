@@ -1,7 +1,11 @@
+(CREDS FOR AWS)
+
 DBBACKUP ACCESS KEY ID:- AKIAQ5OFAS6CZ5WVYG7Y 
 DBBACKUP SECRET ACCESS KEY:- 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
 
 ________________________________________________________________________________________________________________________________________________
+(OUR NOTES)
+
 source /var/tmp/aws/bin/activate
 
 cd /var/tmp/mongo_backup
@@ -15,6 +19,7 @@ tar -ztvf  epic_prod_daily-12-hrs.tgz (for listing)
 aws s3 cp epic_prod_hourly-06-hrs s3://epic-mongo-backup/mongoprod --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers --recursive
 
 _________________________________________________________________________________________________________________________________________________
+(PUSH TO s3)
 
 #!/bin/bash
 set -x
@@ -30,3 +35,15 @@ deactivate
 cd /var/tmp/mongo_backup && rm -rf epic_prod_hourly-*
 
 ________________________________________________________________________________________________________________________________________________
+(MONGO BACKUP PROD)
+
+#!/bin/bash
+
+## takes back up of EPICON Mongo DB
+
+U="epicmdbadmin"
+P="1@mEp1Cr00t"
+DB="epic_prod"
+
+mongodump -u $U -p $P -d $DB -o /var/tmp/mongo_backup/epic_prod_hourly-`date '+%H'`-hrs  --authenticationDatabase=admin
+
