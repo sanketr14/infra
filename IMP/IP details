@@ -16,3 +16,22 @@ SKDEV    ==> Shubhkart Development =
 SKREDIS  ==> Shukbhkart Redis = 
 SKWEB  ==> Shubhkart Web = 
 
+
+---------------------------------------------------------------------------------------
+mongo Db login=
+->use epic_prod (log in to epic_prod db)
+->mongo -u epicuser01 -p l1v3Ace3sS19 -host 15.206.12.139 --port 27017 (to create user in db)
+
+(command)
+db.createUser({
+   user: 'readuser',
+   pwd: 'readuser123',
+   roles: [{ role: 'read', db:'epic_prod'}]
+})
+
+---------------------------------------------------------------------------------------
+Akamia user name=
+anup.nair@latestly.com
+
+pass=
+---------------------------------------------------------------------------------------
