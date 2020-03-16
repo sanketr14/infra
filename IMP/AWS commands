@@ -16,4 +16,24 @@
 go to libre office then open the csv file and save.
 
 --------------------------------------------------------------------------------------
-3) 
+3) Amazon Elastic Transcoder= media conversion
+
+AWS Elemental MediaConvert == is a file-based video transcoding service with broadcast-grade features. It allows you to easily create video-on-demand (VOD) 
+
+data flow for video conversion= raw data(sanket.mov format) --> mediaconvert transcode(sanket.mp4 format in 240/480/720 resolutions) --> HLS M3U8(http live stream) --> video player (to view video)
+
+HLS= its work in chunks(5 sec in store in ts format like buffer time)
+
+---------------------------------------------------------------------------------------------
+
+4) To search logs in AWS using GUI= CLOUDWATCH--> Log--> Log groups --> choose metric filters
+
+To search log entries using the AWS CLI= aws logs filter-log-events --log-group-name my-group [--log-stream-names LIST_OF_STREAMS_TO_SEARCH] --filter-pattern VALID_METRIC_FILTER_PATTERN]
+
+---------------------------------------------------------------------------------------------
+5) To get certificate in cli(change location and certificate no as per requirement)=
+i)aws configre(choose regions and text format instead of json)
+
+ii)aws acm get-certificate --certificate-arn arn:aws:acm:us-east-1:063227074437:certificate/5a030c2a-0509-444e-bef9-362679e4357b
+---------------------------------------------------------------------------------------------
+
