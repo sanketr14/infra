@@ -1,0 +1,99 @@
+﻿; Domain: epicon.in
+; Exported (y-m-d hh:mm:ss): 2020-03-16 05:29:44
+;
+; This file is intended for use for informational and archival
+; purposes ONLY and MUST be edited before use on a production
+; DNS server.
+;
+; In particular, you must update the SOA record with the correct
+; authoritative name server and contact e-mail address information,
+; and add the correct NS records for the name servers which will
+; be authoritative for this domain.
+;
+; For further information, please consult the BIND documentation
+; located on the following website:
+;
+; http://www.isc.org/
+;
+; And RFC 1035:
+;
+; http://www.ietf.org/rfc/rfc1035.txt
+;
+; Please note that we do NOT offer technical support for any use
+; of this zone data, the BIND name server, or any other third-
+; party DNS software.
+;
+; Use at your own risk.
+
+
+; SOA Record
+epicon.in.	600	 IN 	SOA	ns27.domaincontrol.com.	dns.jomax.net. (
+					2020031602
+					28800
+					7200
+					604800
+					600
+					) 
+
+; A Records
+@	600	 IN 	A	35.154.102.20
+origin	1800	 IN 	A	107.20.35.3
+origin.prod	1800	 IN 	A	54.159.216.81
+staging	1800	 IN 	A	23.22.199.3
+stg	600	 IN 	A	13.232.245.108
+www	600	 IN 	A	35.154.102.20
+
+; CNAME Records
+2273kh3zs2ojpnx3bxohpkj7ck6jba6p._domainkey.mailer	1200	 IN 	CNAME	2273kh3zs2ojpnx3bxohpkj7ck6jba6p.dkim.amazonses.com.
+ayf4dn24txalta2rsnm25pxtf7l4nrfy._domainkey.mailer1	600	 IN 	CNAME	ayf4dn24txalta2rsnm25pxtf7l4nrfy.dkim.amazonses.com.
+clavzjn7i3k3q4sdvelvsypfeg4d5it3._domainkey.mailer	600	 IN 	CNAME	clavzjn7i3k3q4sdvelvsypfeg4d5it3.dkim.amazonses.com.
+dev	600	 IN 	CNAME	dev.epicon.in.edgesuite.net.
+fbgfuprac4vddwsbun3pilyqpiqcuyq4._domainkey.mailer	600	 IN 	CNAME	fbgfuprac4vddwsbun3pilyqpiqcuyq4.dkim.amazonses.com.
+ftp	1800	 IN 	CNAME	@
+fw6rynr6h2rtmz66o3sv5kcaez7bxdsh._domainkey.mailer	1200	 IN 	CNAME	fw6rynr6h2rtmz66o3sv5kcaez7bxdsh.dkim.amazonses.com.
+gy37lsqnldol2ieiy4kqkwm2ninhqoou._domainkey.mailer	600	 IN 	CNAME	gy37lsqnldol2ieiy4kqkwm2ninhqoou.dkim.amazonses.com.
+j52gvwwb7ijtnnyhm2unailokyjkggxk._domainkey.mailer1	600	 IN 	CNAME	j52gvwwb7ijtnnyhm2unailokyjkggxk.dkim.amazonses.com.
+origin.preprod	1800	 IN 	CNAME	preprod-epicon-in-1361690079.us-east-1.elb.amazonaws.com.
+ottapi.preprod	1800	 IN 	CNAME	ottapi.preprod.epicon.in.edgesuite.net.
+preprod	1800	 IN 	CNAME	preprod.epicon.edgekey.net.
+prod	1800	 IN 	CNAME	d31b23cpgrh4nf.cloudfront.net.
+tjdlxdowj3j2zbubgyhaxlhlqbmcpy6v._domainkey.mailer1	600	 IN 	CNAME	tjdlxdowj3j2zbubgyhaxlhlqbmcpy6v.dkim.amazonses.com.
+w4i4bspe6s3y3jdsgep6a5st5cstiprj._domainkey.mailer	1200	 IN 	CNAME	w4i4bspe6s3y3jdsgep6a5st5cstiprj.dkim.amazonses.com.
+_36238404fc8696174fbbf2c8e1bfe958.preprod	1800	 IN 	CNAME	_ddeb04815e5c15d62452f91a285721b3.acm-validations.aws.
+_464695b342760f613546c1b74db059e6	600	 IN 	CNAME	_d7d7bd6cf1a89d14c4acb30f446da964.vhzmpjdqfx.acm-validations.aws.
+_domainconnect	1800	 IN 	CNAME	_domainconnect.gd.domaincontrol.com.
+_ee1dd6092937905ac5304039a8829a9e.dev	600	 IN 	CNAME	_45b0d3831381ae7defa914b156dc0a61.vhzmpjdqfx.acm-validations.aws.
+
+; MX Records
+@	1800	 IN 	MX	1	aspmx.l.google.com.
+@	1800	 IN 	MX	10	alt3.aspmx.l.google.com.
+@	1800	 IN 	MX	10	alt4.aspmx.l.google.com.
+@	1800	 IN 	MX	5	alt1.aspmx.l.google.com.
+@	1800	 IN 	MX	5	alt2.aspmx.l.google.com.
+mailer	600	 IN 	MX	10	inbound-smtp.eu-west-1.amazonaws.com.
+mailer	600	 IN 	MX	10	inbound-smtp.us-east-1.amazonaws.com.
+
+; TXT Records
+@	1800	 IN 	TXT	"google-site-verification=MhOZuBYy4Kj6vgIbvxGqoUf0URhYlqWDTc70ngW_on8"
+@	600	 IN 	TXT	"v=spf1 include:spf.mandrillapp.com ?all"
+@	1800	 IN 	TXT	"v=spf1 include:_spf.google.com ~all"
+mandrill._domainkey	600	 IN 	TXT	"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrLHiExVd55zd/IQ/J/mRwSRMAocV/hMB3jXwaHH36d9NaVynQFYV8NaWi69c1veUtRzGt7yAioXqLj7Z4TeEUoOLgrKsn8YnckGs9i3B3tVFB+Ch/4mPhXWiNfNdynHWBcPcbJ8kjEQ2U8y78dHZj1YeRXXVvWob2OaKynO8/lQIDAQAB;"
+_acme-challenge	600	 IN 	TXT	"fg3XwluzovJECPsXjGWBklXdGcr7wsyAz--AP7aGsD8"
+_acme-challenge.dev	600	 IN 	TXT	"LiKtN6kor8_b216IBdKY3Gj5g4_3dsQfFjjOHGi9fSQ"
+_acme-challenge.ebooks	600	 IN 	TXT	"jMMyreMDFIjRjVleQCS39VCOnZai79HR_WyXeuPfYuo"
+_acme-challenge.podcast	600	 IN 	TXT	"jgth9yBPMx5Z-0Vi0F66GWrFL7CDeigFZGYjdlMwQX4"
+_acme-challenge.www	600	 IN 	TXT	"TgkiV7LIt-ULlt0WLF31aeUEH5XvAbpVICdEk5lmNjQ"
+_amazonses.mailer	600	 IN 	TXT	"9ed4wNsuCqtinP2/wpTGQ9LSmVopi635214THvmlwdA="
+_amazonses.mailer	600	 IN 	TXT	"i06gyu8x+R6ljfD1uAiN7DMNsJ0QAth2EFyL7H3mHhM="
+_amazonses.mailer1	600	 IN 	TXT	"83dBCg9B20leqJzvYSwsga/GZO5N1qtkBLIXTtIOQpQ="
+
+; SRV Records
+
+; AAAA Records
+
+; CAA Records
+
+; NS Records
+@	3600	 IN 	NS	ns27.domaincontrol.com.
+@	3600	 IN 	NS	ns28.domaincontrol.com.
+
