@@ -1,0 +1,79 @@
+Hari Iyer <hiyer@epicchannel.com>
+	
+Tue, Jan 14, 1:08 PM
+	
+to Shannon
+Credentials:
+Docubay Dev-
+Address: ftpdev.epicchannel.com:27017
+Database: dev_docubay
+Username: docadmin
+Password: ly1920123
+
+Docubay Live-
+Address: cmslive.docubay.com:27017
+Database: docubay_prod
+Username: dbayuser
+Password: d0cUbAyT3cH1920
+
+Epic Dev-
+Address: ftpdev.epicchannel.com:27017
+Database: epicdev
+Username: epicappuser
+Password: 1cang3t1n18
+
+Epic Live-
+Address: 15.206.12.139:27017
+Database: epic_prod
+Username: epicuser01
+Password: l1v3Ace3sS19
+
+
+mongodump --host 15.206.12.139 -d epic_prod --port 27017 --username epicuser01 --password l1v3Ace3sS19 --out mongodump-epic_prod
+mongodump --host cmslive.docubay.com -d docubay_prod --port 27017 --username dbayuser --password d0cUbAyT3cH1920 --out mongodump-docubay_prod
+
+
+mongorestore --host=ftpdev.epicchannel.com --port=27017 -u docadmin -p dj7f2uarxrvc7ec6qwfu  --db dev_docubay mongodump-docubay_prod/docubay_prod/ --authenticationDatabase "dev_docubay"
+
+mongorestore --host=ftpdev.epicchannel.com --port=27017 -u epicappuser -p ej6gwh597chr5pu9paw4  --db epicdev mongodump-epic_prod/epic_prod/ --authenticationDatabase "epicdev"
+
+
+
+
+
+mongo -u docadmin -p ly1920123  ftpdev.epicchannel.com:27017/dev_docubay --authenticationDatabase "dev_docubay"
+use dev_docubay
+db.changeUserPassword("docadmin", "docadmin_2020")
+
+mongo -u epicappuser -p 1cang3t1n18  ftpdev.epicchannel.com:27017/epicdev --authenticationDatabase "epicdev"
+use epicdev
+db.changeUserPassword("epicappuser", "epicappuser_2020")
+
+
+
+
+
+ej6gwh597chr5pu9paw4
+
+dj7f2uarxrvc7ec6qwfu
+-------------------------------------------------------------------------
+
+db.changeUserPassword("epicappuser", "ej6gwh597chr5pu9paw4")
+db.changeUserPassword("docadmin", "dj7f2uarxrvc7ec6qwfu")
+
+
+---------------------------------------------------------------------_--
+db.createUser({user: "epicappuser_ro",pwd: "x5dx6rzg4qz2sbw8wfua", roles: [{role:"read", db: "epicdev"}]})
+db.createUser({user: "docadmin_ro",pwd: "x5dx6rzg4qz2sbw8wfua", roles: [{role:"read", db: "dev_docubay"}]})
+-----------------------------------------------------------------------
+user:- epicappuser_ro
+pwd:- x5dx6rzg4qz2sbw8wfua
+Database:- epicdev
+------------------------------------------------------------------------
+user: docadmin_ro
+pwd:- x5dx6rzg4qz2sbw8wfua
+Database:- dev_docubay
+
+
+
+
