@@ -1,3 +1,14 @@
+AKIAQ5OFAS6CXODMDQ7N
+D4p58EYtaVeNMureF1DZBtSbuewBnIFjfvLOieLC
+
+
+aws acm export-certificate \
+--certificate-arn arn:aws:acm:region:account:certificate/12345678-1234-1234-1234-123456789012 \
+--passphrase --file://path-to-passphrase-file  \
+| jq -r '"\(.Certificate)\(.CertificateChain)\(.PrivateKey)"'
+
+
+
 1) To list all EC2 instaces with cli=
 
 # aws ec2 describe-instances --query 'Reservations[].Instances[].[Tags[?Key==`Name`].Value[] | [0], Placement.AvailabilityZone,InstanceType,State.Name]' --output text
