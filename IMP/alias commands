@@ -18,3 +18,9 @@ alias eqa='ssh -X qauser@34.197.10.18'
 nginx logs= cd /var/log/nginx/
 to give permission to copy to desktop = chown -R eadmin.eadmin /home/eadmin
 
+3)for 505 error(epic)=
+i)login to EPPWEB
+ii)check memory(free -kh)
+iii)then stop php(service php-fpm stop)
+iv)start php(service php-fpm start)
+

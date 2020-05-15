@@ -1,0 +1,60 @@
+1)certificate creation Akamai
+2)conf file creation nginx
+3)property/cp code creation
+4)Dns mapping
+5)Test
+
+devtpay.epicon.in.edgesuite.net
+
+devsla.epicon.in.edgesuite.net
+
+_acme-challenge.livecms.epicon.in.
+ VdZhpHJ6Jw4hs2e-M3CYpxJI3JMrBdBXTw6vo9aTg2g
+
+_acme-challenge.devsla.epicon.in.
+ h7msXyfQ9RFehG2edkqkI0Xv-WY2GU4oKBQY56uSNyw
+
+_acme-challenge.stgcms.epicon.in.
+ F6jhGrzt1Gd_enYWbVzDTCiLxFbXXisECMFquMxzLqE
+
+_acme-challenge.devcms.epicon.in.
+ hq15NZSk4vzBOqS8i5Bq2j7cWoy73tnM3hhPAKLktdQ
+
+_acme-challenge.tpay.epicon.in.
+ cJ3vFoyokOK9Ka50cKYGuB5zGWpVzSa_6u_tVaWsVYA
+
+_acme-challenge.cmslive.epicon.in.
+ pPQ7v-HfZP-o1ksAsHJBd3vtDmAe-QsnJ3Ca25LKmJg
+
+_acme-challenge.devtpay.epicon.in.
+ JvjHrD2wL5gkL7U2qZWTykOJaDOQwEdFpZkGV7ghMe4
+
+_acme-challenge.sla.epicon.in.
+ V2Vg0oqkPZxzBRs5L_MvZyBzH0hEX1h8__sbYci0LCw
+
+F6jhGrzt1Gd_enYWbVzDTCiLxFbXXisECMFquMxzLqE
+
+sed -i s:"uae.epicon.in":"tpay.epicon.in":g tpay.epicon.in.conf
+
+
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+
+        <p>Hello world! This is sla with https.</p>
+
+    </body>
+</html>
+
+tpay.epicon.in.edgesuite.net
+
+sla.epicon.in.edgesuite.net
+
+
