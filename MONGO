@@ -76,4 +76,25 @@ Database:- dev_docubay
 
 
 
+---------------------------------------------------------------------------------------------------------------------------------------------
+ db.createCollection("aws_spams")
+ 
+ 
+mongoimport --type csv -d test -c aws_spams --headerline --drop output.csv
+
+mongo -u epicuser01 -p l1v3Ace3sS19  15.206.12.139:27017/epic_prod --authenticationDatabase "epic_prod"
+
+
+mongoimport --host 15.206.12.139 --port 27017 --db "epic_prod" --collection "aws_spams" --file "output.csv" --type csv --headerline
+mongoimport --host ftpdev.epicchannel.com --port 27017 --db "epicdev" --collection "aws_spams" --file "output.csv" --type csv --headerline
+
+
+
+
+
+
+
+
+
+
 
