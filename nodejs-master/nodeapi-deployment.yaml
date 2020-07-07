@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simpleapi
+  namespace: default
+  labels:
+    app: simpleapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simpleapi
+  template:
+    metadata:
+      labels:
+        app: simpleapi
+    spec:
+      containers:
+      - name: simpleapi
+        image: hsivabc/nodeapi:latest
+        ports:
+        - containerPort: 9001
+      nodeSelector:
+        servicetype: simpleapi
+#      imagePullSecrets:
+#      - name: nexus 
+      dnsConfig:
+        nameservers:
+          - 8.8.8.8
+

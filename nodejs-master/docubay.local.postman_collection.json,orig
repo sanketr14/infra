@@ -1,0 +1,3279 @@
+{
+	"info": {
+		"_postman_id": "66cef6d3-660f-4c8f-856c-59c13d59d092",
+		"name": "docubay local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "pages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/pages/biography?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33&user_id=sdsouza@epicchannel.com&session_id=e392bb460199e9d2234c1e00afb1068d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"pages",
+						"biography"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						},
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com"
+						},
+						{
+							"key": "session_id",
+							"value": "e392bb460199e9d2234c1e00afb1068d"
+						},
+						{
+							"key": "page",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "menu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/menu/?auth_token=Wu2nqxjpernTOXNm36v7Zi1ae0EWmACO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"menu",
+						""
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "Wu2nqxjpernTOXNm36v7Zi1ae0EWmACO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "content",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/contents/ganesha-s-secret-part-3?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"contents",
+						"ganesha-s-secret-part-3"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						},
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"disabled": true
+						},
+						{
+							"key": "session_id",
+							"value": "asdfasf",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "Sdsouza@Epic.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/users/signup?auth_token=vxA4LO0BzfRmU3X40OlL2CTIBTdB0tMM",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"signup"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "vxA4LO0BzfRmU3X40OlL2CTIBTdB0tMM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234567",
+							"type": "text"
+						},
+						{
+							"key": "source",
+							"value": "facebook",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/users/signin?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"signin"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "shannon.dsouza@shubhkart.com",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "e43b07482240a75c2af09152b0cf7f28",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/users/signout?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"signout"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "smart search",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "searchTerm",
+							"value": "e3",
+							"type": "text"
+						},
+						{
+							"key": "genreId",
+							"value": "17",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/contents/smartsearch?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"contents",
+						"smartsearch"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "searchTerm",
+							"value": "sealer",
+							"type": "text"
+						},
+						{
+							"key": "genreId",
+							"value": "60",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/contents/search?auth_token=Wu2nqxjpernTOXNm36v7Zi1ae0EWmACO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"contents",
+						"search"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "Wu2nqxjpernTOXNm36v7Zi1ae0EWmACO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsearch",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "searchTerm",
+							"value": "adventure",
+							"type": "text"
+						},
+						{
+							"key": "genreId",
+							"value": "60",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/contents/newsearch?auth_token=Wu2nqxjpernTOXNm36v7Zi1ae0EWmACO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"contents",
+						"newsearch"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "Wu2nqxjpernTOXNm36v7Zi1ae0EWmACO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getemail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "hash",
+							"value": "cHBhdGlsQGVwaWNjaGFubmVsLmNvbSQzODQzOTI=",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/getemail?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"getemail"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verify email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza12@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "hash",
+							"value": "c2Rzb3V6YTEyQGVwaWNjaGFubmVsLmNvbSQ5NjI4OTM=",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/users/verifyemail?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"verifyemail"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generate otp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/getOTP?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"getOTP"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verify otp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "otp",
+							"value": "174782",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/verifyOTP?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"verifyOTP"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "old_password",
+							"value": "1234567",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "new_password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "user_subscription_type",
+							"value": "EMAIL",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "hash",
+							"value": "c2Rzb3V6YUBlcGljY2hhbm5lbC5jb20kMjg0NzE4",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "ece73fa26be52325363b3ccd84b34231",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "otp",
+							"value": "200133",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/users/resetpass?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"resetpass"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add to favourites",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user_id\":\"sdsouza@epicchannel.com\",\"content_id\":[2037],\"session_id\":\"d74fcdad963b4889bbf525eb944a3278\",\"action\":\"add\"}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/contents/favourites?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"contents",
+						"favourites"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view favourites",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "session_id",
+							"value": "d55c695939f2216249f89ba4bf4d98c5",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "view",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/contents/favourites?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"contents",
+						"favourites"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove favourite",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "a3fdd97a5b46389e756af5b5974ce2a2",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "delete",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/contents/favourites?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contents",
+						"favourites"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add history",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "shannon.dsouza@shubhkart.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "ca37aac612533233a2e9ab43dcee2477",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "add",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/contents/history?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contents",
+						"history"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view history",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "session_id",
+							"value": "a3fdd97a5b46389e756af5b5974ce2a2",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "view",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/contents/history?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contents",
+						"history"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove history",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "a3fdd97a5b46389e756af5b5974ce2a2",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "delete",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/contents/history?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contents",
+						"history"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add watchlater",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "a3fdd97a5b46389e756af5b5974ce2a2",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "add",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/contents/watchlater?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contents",
+						"watchlater"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view watch later",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "session_id",
+							"value": "a3fdd97a5b46389e756af5b5974ce2a2",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "view",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/contents/watchlater?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contents",
+						"watchlater"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove watch later",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "1502",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "a3fdd97a5b46389e756af5b5974ce2a2",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "delete",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/contents/watchlater?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contents",
+						"watchlater"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add playback",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "876",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "ece73fa26be52325363b3ccd84b34231",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "add",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/contents/playback?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contents",
+						"playback"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view playback",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "session_id",
+							"value": "ece73fa26be52325363b3ccd84b34231",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "view",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/contents/playback?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contents",
+						"playback"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove playback",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "shannon.dsouza@shubhkart.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "51",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "ca37aac612533233a2e9ab43dcee2477",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "delete",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/contents/playback?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contents",
+						"playback"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewprofile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "3da5f273691dc1043725b68bea8e1471",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/accounts/viewprofile?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"accounts",
+						"viewprofile"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "6865e42732a82a1d336ad6de61604570",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "shannon",
+							"type": "text"
+						},
+						{
+							"key": "date_of_birth",
+							"value": "8-8-8",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "M",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "India",
+							"type": "text"
+						},
+						{
+							"key": "news_letter_subscription",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "79776948191",
+							"type": "text"
+						},
+						{
+							"key": "user_subscription_type",
+							"value": "MOBILE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/accounts/updateprofile?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"updateprofile"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/subscriptions/plans?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33&x_country=SA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"subscriptions",
+						"plans"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						},
+						{
+							"key": "x_country",
+							"value": "SA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "playurl",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "2084",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "e392bb460199e9d2234c1e00afb1068d",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "PROMO",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/contents/playurl/?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"contents",
+						"playurl",
+						""
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						},
+						{
+							"key": "content_id",
+							"value": "55",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "25cce97b5291c213dc7f449f109638e2",
+							"type": "text"
+						},
+						{
+							"key": "coupon_code",
+							"value": "DOCUZHK5M",
+							"type": "text"
+						},
+						{
+							"key": "x_country",
+							"value": "US",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/subscriptions/createorder?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"subscriptions",
+						"createorder"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "6b94f70342d6f5076d4a09e9b9b0af42",
+							"type": "text"
+						},
+						{
+							"key": "order_status",
+							"value": "complete",
+							"type": "text"
+						},
+						{
+							"key": "order_id",
+							"value": "100179",
+							"type": "text"
+						},
+						{
+							"key": "android_receipt",
+							"value": "gdlcdblnijjoncknfmnbgpgb.AO-J1Oy9KwwJuAcNMwYwXodjftVOK_x4x7_aldZTFoS1F4dq-dnm_A7H0qup-3WdaAdpGBPBU1GSp6JaGvaA3qV9ywMe3sAiZ65kysiudqxJbKejo0volIHHmUjTZyYcElN8ZOEVRH_5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "ios_receipt",
+							"value": "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",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/subscriptions/updateorder?auth_token=vxA4LO0BzfRmU3X40OlL2CTIBTdB0tMM",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"subscriptions",
+						"updateorder"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "vxA4LO0BzfRmU3X40OlL2CTIBTdB0tMM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "purchases",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "shree99@mailinator.com",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "e812f519a4fb8edd3e4da627128e8d33",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/accounts/purchases?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"accounts",
+						"purchases"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get pin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "8b311a62034d17a2a696bf582843498f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/getpin?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"getpin"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verify pin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "pin",
+							"value": "601435",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/verifypin?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"verifypin"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get country state",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/accounts/getcountrystate?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"getcountrystate"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add playlog",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "1128",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "ece73fa26be52325363b3ccd84b34231",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "22",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/setplaystatus?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"setplaystatus"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generate checksum",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "ppatil@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "order_id",
+							"value": "111",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/subscriptions/generatechecksum?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"subscriptions",
+						"generatechecksum"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "static pages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/static-pages/create-update-support-ticket-4?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"static-pages",
+						"create-update-support-ticket-4"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contact us",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "shannon.dsouza@shubhkart.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "session_id",
+							"value": "ca37aac612533233a2e9ab43dcee2477",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "country",
+							"value": "India",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "9999999999",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "subject",
+							"value": "query",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "dummy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/static-pages/contactus?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"static-pages",
+						"contactus"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get ccavenue rsa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "ppatil@epicchannel.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "order_id",
+							"value": "111",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/subscriptions/getRSAKey?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"subscriptions",
+						"getRSAKey"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "config",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-store",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/config?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"config"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "download links",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "nisingh@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "2083",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "a5420f3ae5fba9224526f29302a51a76",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "PROMO",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/contents/download/?auth_token=vxA4LO0BzfRmU3X40OlL2CTIBTdB0tMM",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"contents",
+						"download",
+						""
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "vxA4LO0BzfRmU3X40OlL2CTIBTdB0tMM"
+						},
+						{
+							"key": "content_id",
+							"value": "55",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "related content",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/contents/contentlist/2035?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"contents",
+						"contentlist",
+						"2035"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						},
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "push subscription data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/config/pushsubs?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"config",
+						"pushsubs"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mi tv content",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "hash",
+							"value": "cHBhdGlsQGVwaWNjaGFubmVsLmNvbSQzODQzOTI=",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/contents/micontent?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contents",
+						"micontent"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "genres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/genres/?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"genres",
+						""
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rss",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "hash",
+							"value": "cHBhdGlsQGVwaWNjaGFubmVsLmNvbSQzODQzOTI=",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/contents/rss?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contents",
+						"rss"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all mi content",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "hash",
+							"value": "cHBhdGlsQGVwaWNjaGFubmVsLmNvbSQzODQzOTI=",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/contents/allmicontent?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contents",
+						"allmicontent"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get payment gateways",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/subscriptions/getpgs?auth_token=tkLkjzlYe876feNbkfbTeEVgkG9VgH7Y",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"subscriptions",
+						"getpgs"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "tkLkjzlYe876feNbkfbTeEVgkG9VgH7Y"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete sub",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/subscriptions/deletesubs?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH&user_id=sumonbesu@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"subscriptions",
+						"deletesubs"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						},
+						{
+							"key": "user_id",
+							"value": "sumonbesu@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendemail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_body",
+							"value": "Hi",
+							"type": "text"
+						},
+						{
+							"key": "email_subject",
+							"value": "subject",
+							"type": "text"
+						},
+						{
+							"key": "email_to",
+							"value": "['s@s.com','a@a.com']",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/sendemail?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"sendemail"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "search",
+							"value": "shanjkahkjfjasnon",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/getusers?auth_token=szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"getusers"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "szQDOyDaxsS0E4qeV1rMfpYBKnSWVESH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cms getorders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "order_status",
+							"value": "initiated",
+							"type": "text"
+						},
+						{
+							"key": "created_date",
+							"value": "2019-02-20 19:01:43.916Z",
+							"type": "text"
+						},
+						{
+							"key": "payment_gateway",
+							"value": "ccavenue",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/cms/getorders?auth_token=tkLkjzlYe876feNbkfbTeEVgkG9VgH7Y",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cms",
+						"getorders"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "tkLkjzlYe876feNbkfbTeEVgkG9VgH7Y"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invite user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "fd96ded3a21fa034fc51321b8212c59a",
+							"type": "text"
+						},
+						{
+							"key": "email1",
+							"value": "shannondsouz222@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email2",
+							"value": "shannondsouz2222@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/users/invite/?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"invite",
+						""
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						},
+						{
+							"key": "content_id",
+							"value": "55",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "docubytes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "genre_id",
+							"value": "47",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/contents/docubytes/?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33&genre_id=49",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"contents",
+						"docubytes",
+						""
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						},
+						{
+							"key": "genre_id",
+							"value": "49"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsletter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/users/newsletter/?auth_token=vxA4LO0BzfRmU3X40OlL2CTIBTdB0tMM",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"newsletter",
+						""
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "vxA4LO0BzfRmU3X40OlL2CTIBTdB0tMM"
+						},
+						{
+							"key": "content_id",
+							"value": "55",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "childlock",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "source",
+							"value": "facebook",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/users/childlock?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"childlock"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create sub order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "session_id",
+							"value": "fd96ded3a21fa034fc51321b8212c59a",
+							"type": "text"
+						},
+						{
+							"key": "plan_id",
+							"value": "doc_in_pl_2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/subscriptions/createordersubscription?auth_token=Wu2nqxjpernTOXNm36v7Zi1ae0EWmACO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"subscriptions",
+						"createordersubscription"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "Wu2nqxjpernTOXNm36v7Zi1ae0EWmACO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "u2opia signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "status",
+							"value": "SUBSCRIBED",
+							"type": "text"
+						},
+						{
+							"key": "msisdn",
+							"value": "2335488845011",
+							"type": "text"
+						},
+						{
+							"key": "operatorId",
+							"value": "MTNGH",
+							"type": "text"
+						},
+						{
+							"key": "contentId",
+							"value": "226",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/cms/createU2subscription?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"cms",
+						"createU2subscription"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "u2opia content",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "msisdn",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "2108",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/cms/u2content?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"cms",
+						"u2content"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_body",
+							"value": "<b>Hi</b>",
+							"type": "text"
+						},
+						{
+							"key": "email_subject",
+							"value": "subject",
+							"type": "text"
+						},
+						{
+							"key": "email_to",
+							"value": "['s@s.com','a@a.com']",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/users/sendemail?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"sendemail"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "playtracking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "sdsouza@epicchannel.com",
+							"type": "text"
+						},
+						{
+							"key": "content_id",
+							"value": "1128",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "22",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "abc",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "video",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/users/setplaytracking?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"setplaytracking"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "airtel bulkdata",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "order_status",
+							"value": "initiated",
+							"type": "text"
+						},
+						{
+							"key": "created_date",
+							"value": "2019-02-20 19:01:43.916Z",
+							"type": "text"
+						},
+						{
+							"key": "payment_gateway",
+							"value": "ccavenue",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/cms/getorders?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"cms",
+						"getorders"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "airtel content url",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "content_id",
+							"value": "2202",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/cms/airtelcontent?auth_token=1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"cms",
+						"airtelcontent"
+					],
+					"query": [
+						{
+							"key": "auth_token",
+							"value": "1kvDk3lKVKPTIX7nG3kcYhZaZKwnpv33"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d2b97ca9-99b2-4afc-aa2a-ec68a2fd19ba",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8aff3bd0-609e-4ba6-b19d-58abd61ff612",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

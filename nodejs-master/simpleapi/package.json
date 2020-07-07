@@ -1,0 +1,11 @@
+{
+  "name": "simpleapi",
+  "version": "1.0.0",
+  "description": "Hari Iyer's First NodeJS Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "Hello"
+  },
+  "author": "",
+  "license": "ISC"
+}

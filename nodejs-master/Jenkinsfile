@@ -1,0 +1,38 @@
+node 
+{
+	def app
+	stage('Clone repository') 
+	{
+		checkout scm
+	}
+
+	stage('Build image') 
+	{
+		app = docker.build("hsivabc/node-web-app-1")
+	}
+
+	stage('Test image')
+	{
+		app.inside 
+		{
+			sh 'echo "Tests passed"'
+		}
+
+	}
+
+	stage('Push image')
+	{
+		app.push("latest")
+	}
+
+	stage('Deploy in Local Docker') 
+	{
+	    sh 'sh nodesvc.sh'
+	    sh 'docker ps -a|grep haritibcoblog-node-webapp'
+	}
+
+	stage('Deploy in Kubernetes Cluster') 
+	{
+	    sh 'echo "This Update is yet to be released."'
+	}
+}
